@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>EXERCISE 05 - JAVASCRIPT - STARTER ROCKETSEAT </title>
+    </head>
+    <body>
+        
+        <script>
+            function skillsShow (users) {
+    for (user of users) {
+        console.log (
+            "The " + user.name + ", He is approved in: " + user.skills.join(", ")
+        );
+    }
+}
+
+var users = [
+    {
+        name: "Diego",
+        skills: ["Javascript", "ReactJS", "Redux"]
+    },
+    {
+        name: "Gabriel",
+        skills: ["Redux", "Elixir", "Ruby on Rails"]
+    }
+];
+
+skillsShow (users);
+        </script>
+    </body>
+</html>

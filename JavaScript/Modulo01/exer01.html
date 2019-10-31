@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> EXERCISE 01 - JAVASCRIPT- STARTER ROCKETSEAT</title>
+    <body>
+     
+        <script>
+        function userShow (adress) {
+    return ( "O usuário mora em " + adress.city + "/" + adress.state + ", no bairro " + adress.neighborhood +  ", na "  + adress.street + " com n° " + adress.number + "." );
+ }
+ var  adress = {
+     street: "Rua dos Pinheiros",
+     number: 1293,
+     neighborhood: "Centro",
+     city: "São Paulo",
+     state: "SP"
+ }
+          console.log (userShow(adress));    
+        </script>
+    </body>
+</html>
