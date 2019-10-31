@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Starter Rocketseat Javascript Exercises</title>
+    </head>
+    <body>
+       
+        <script>
+            function ageCheckout(age) {
+    return new Promise(function(resolve, reject) {
+      setTimeout(function() {
+        return age >= 18 ? resolve() : reject(); }, 2000);
+    });
+  }
+  
+  ageCheckout(20)
+    .then(function() {
+      console.log("Bigger than 18");
+    })
+    .catch(function() {
+      console.log("Less than 18");
+    });
+        </script>
+    </body>
+</html>
