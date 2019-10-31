@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title> Starter Rocketseat Javascript Exercises </title>
+</head>
+
+<body>
+  <ul></ul>
+
+  <input type="text" name="name">
+  <button onclick="addNew()">Add new name, please!</button>
+
+  <script>
+    var names= ['Diego', 'Gabriel', 'Lucas'];
+    var listElement = document.querySelector('ul');
+    var inputElement = document.querySelector('input');
+
+    function addName(text) {
+      var liElement = document.createElement('li');
+      var textElement = document.createTextNode(text);
+
+      liElement.appendChild(textElement);
+      listElement.appendChild(liElement);
+    }
+    function addNew() {
+      addName(inputElement.value);
+      inputElement.value = "";
+    }
+    for (name of names) {
+      addName(name);
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Starter Rocketseat Javascript Exercises</title>
+    </head>
+    <body>
+        <button id="new">New Square</button>
+        <div id="squares"></div>
+
+        <script>
+            var buttonElement = document.getElementById('new');
+            var squareElement = document.getElementById('squares');
+
+            buttonElement.onclick = function() {
+                var square = document.createElement('div');
+
+                squareElement.appendChild(square);
+
+                square.style.width = '100px';
+                square.style.height = '100px';
+                square.style.backgroundColor = '#F00';
+                square.style.margin= '10px';
+            }
+        </script>
+    </body>
+</html>
